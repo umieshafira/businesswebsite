@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hijab fashion styles.com</title>
+		<link rel="icon" href="logo.png">
+	<style>
+		body{background-image: url(imej.jpg) }
+		
+		 .navbar{
+	background-color: #FFE8E5;
+	overflow: hidden;
+	height: 63px;
+}
+
+.navbar a{
+	float: left;
+	display: block;
+	color: tomato;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar ul{
+	margin: 8px 0 0 0;
+	list-style: none;
+	font-family: pacifico; 
+	font-size:2rem;
+	color: #a45a52;
+	letter-spacing: 0.5rem;
+	text-shadow: 0px 0px 5px #b87341;
+
+}
+
+
+.side-nav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:#f9e1e0;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s; 
+}
+
+.side-nav a{
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #a1665e;
+	display: block;
+	transition: 0.3s;
+
+
+}
+ .side-nav a:hover{
+ 	color: #E4A199;
+ 	font-size: 29px;
+ }
+
+.side-nav .btn-close{
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main{
+	transition: margin-left 0.5s;
+	padding:20px;
+	overflow: hidden;
+	width: 100%
+}
+		.container{
+			max-width: 878px;
+			margin: auto;
+			background: #FFE8E5;
+			overflow: auto;
+			margin-top: 30px;
+		}
+		.catalogue{
+			margin: 20px;
+			border:1px solid #ccc;
+			float: left;
+			width: 250px;
+		}
+		.catalogue img{
+			width: 100%;
+			height: 280px;
+        }
+        .desc{
+        	padding: 15px;
+        	text-align: center;
+        }
+		
+
+		
+        }
+	</style>
+</head>
+<body>
+
+<nav class="navbar">
+		<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="30" height="30">
+					<path d= "M0, 5 30,5" stroke="#CE897B"
+					stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#E4A199"
+					stroke-width="5"/>
+					<path d= "M0, 23 30,23" stroke="#F37F9C"
+					stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+
+		<ul class="navbar-nav">
+			<CENTER>HIJAB FASHION STYLES</CENTER>
+		</ul>
+	</nav>
+
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close"
+		onclick="closeSideMenu()">&times;</a>
+		<a href="index.html">HOME</a>
+		<a href="aboutus.html">ABOUT US</a>
+		<a href="catalogue.html">CATALOGUE</a>
+		<a href="contactus.html">CONTACT US</a>
+	</div>
+
+
+<script>
+	function openSlideMenu(){
+		document.getElementById('side-menu').style.width='250px';
+		document.getElementById('main').style.marginLeft='250px';
+	}
+
+	function closeSideMenu(){
+		document.getElementById('side-menu').style.width='0px';
+		document.getElementById('main').style.marginLeft='0px';
+	}
+</script>
+
+<div class="container">
+	<div class="catalogue">
+		<img src="tudung/shawl1.jpg">
+		<div class="desc">Laura Basic Shawl-Scarlet<br>RM25</div>
+		
+		
+	</div>
+
+	<div class="catalogue">
+		<img src="tudung/shawl2.jpg">
+		<div class="desc">Laura Basic Shawl-White<br>RM25</div>
+	</div>
+
+	<div class="catalogue">
+		<img src="tudung/shawl3.jpg">
+		<div class="desc">Laura Basic Shawl-Mocha<br>RM25</div>	
+	</div>
+
+	<div class="catalogue">
+		<img src="tudung/shawl4.jpg">
+		<div class="desc">Laura Basic Shawl-Silver<br>RM25</div>	
+	</div>
+
+	<div class="catalogue">
+		<img src="tudung/shawl5.jpg">
+		<div class="desc">Laura Basic Shawl-Salmon<br>RM25</div>	
+	</div>
+
+	<div class="catalogue">
+		<img src="tudung/shawl6.jpg" >
+		<div class="desc">Laura Basic Shawl-Lilac<br>RM25</div>	
+	</div>
+
+	<div class="catalogue">
+		<img src="tudung/shawl7.jpg" >
+		<div class="desc">Laura Basic Shawl-Aqua Blue<br>RM25</div>	
+	</div>
+
+	<div class="catalogue">
+		<img src="tudung/shawl8.jpg">
+		<div class="desc">Laura Basic Shawl-Dusty Pink<br>RM25</div>
+	</div>
+    
+    <div class="catalogue">
+		<img src="tudung/shawl9.jpg">
+		<div class="desc">Laura Basic Shawl-Green<br>RM25</div>
+	</div>
+</div>
+
+</body>
+</html>

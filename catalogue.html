@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hijab fashin style.com</title>
+	<style >
+		body{background-image: url(1.gif); background-size: cover; }
+        .navbar{
+	background-color: #FFE8E5;
+	overflow: hidden;
+	height: 63px;
+}
+
+.navbar a{
+	float: left;
+	display: block;
+	color: tomato;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar ul{
+	margin: 8px 0 0 0;
+	list-style: none;
+	font-family: pacifico; 
+	font-size:2rem;
+	color: #a45a52;
+	letter-spacing: 0.5rem;
+	text-shadow: 0px 0px 5px #b87341;
+
+}
+
+
+.side-nav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:#f9e1e0;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s; 
+}
+
+.side-nav a{
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #a1665e;
+	display: block;
+	transition: 0.3s;
+
+
+}
+ .side-nav a:hover{
+ 	color: #E4A199;
+ 	font-size: 29px;
+ }
+
+.side-nav .btn-close{
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main{
+	transition: margin-left 0.5s;
+	padding:20px;
+	overflow: hidden;
+	width: 100%
+}
+
+		.bawal img{
+             width: 280px;
+             margin-left: 2%;
+            margin-top: 70px;
+            border-style: solid;
+            border-color: pink;
+		}
+		.bawal h1{
+			border-style: solid;
+			margin-left: 2%;
+			width: 280px;
+			height: 50px; 
+			text-align: center;
+			margin-top: 0px;
+			background-color: pink;
+			border-color: pink;
+            font-family:  cursive;
+            position: absolute;
+
+        
+
+
+		}
+		.shawl img{
+             width: 280px;
+             margin-left: 26%;
+            border-style: solid;
+            border-color: pink;
+            margin-top: -290px;
+            position: absolute;
+        }
+        .shawl h1{
+			border-style: solid;
+			margin-left: 26.3%;
+			width: 280px;
+			height: 50px; 
+			text-align: center;
+			margin-top: 150px;
+			background-color: pink;
+			border-color: pink;
+            font-family:  cursive
+            
+
+        }
+        .bawalshawl img{
+             width: 280px;
+            margin-top: -515px;
+            margin-left: 50%;
+            border-style: solid;
+            border-color: pink;
+            position: absolute;
+            
+		}
+		.bawalshawl h1{
+			border-style: solid;
+			margin-left: 50%;
+			width: 280px;
+			height: 50px; 
+			text-align: center;
+			margin-top: -225px;
+			background-color: pink;
+			border-color: pink;
+            font-family:  cursive;
+            position: absolute;
+
+        }
+        .bawalflora img{
+             width: 280px;
+            margin-top: -460px;
+            margin-left: 74%;
+            border-style: solid;
+            border-color: pink;
+            position: absolute;
+            
+		}
+		.bawalflora h1{
+			border-style: solid;
+			margin-left: 74%;
+			width: 280px;
+			height: 50px; 
+			text-align: center;
+			margin-top: -170px;
+			background-color: pink;
+			border-color: pink;
+            font-family:  cursive;
+            position: absolute;
+            font-size: 26px;
+      
+
+        
+
+		
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="30" height="30">
+					<path d= "M0, 5 30,5" stroke="#CE897B"
+					stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#E4A199"
+					stroke-width="5"/>
+					<path d= "M0, 23 30,23" stroke="#F37F9C"
+					stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+
+		<ul class="navbar-nav">
+			<CENTER>HIJAB FASHION STYLES</CENTER>
+		</ul>
+	</nav>
+
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close"
+		onclick="closeSideMenu()">&times;</a>
+		<a href="index.html">HOME</a>
+		<a href="aboutus.html">ABOUT US</a>
+		<a href="catalogue.html">CATALOGUE</a>
+		<a href="contactus.html">CONTACT US</a>
+	</div>
+
+
+<script>
+	function openSlideMenu(){
+		document.getElementById('side-menu').style.width='250px';
+		document.getElementById('main').style.marginLeft='250px';
+	}
+
+	function closeSideMenu(){
+		document.getElementById('side-menu').style.width='0px';
+		document.getElementById('main').style.marginLeft='0px';
+	}
+</script>
+
+	<div class="bawal">
+		<img src="tudung/bawal.jpg">
+		<div><a href="cataloguebawal.html" style="text-decoration: none; color: #9e4244; "><h1>Bawal</h1></a></div>
+	</div>
+
+	<div class="shawl">
+		<img src="tudung/shawl.jpg">
+		<div><a href="catalogueshawl.html" style="text-decoration: none; color: #9e4244; "><h1>Shawl</h1></a></div>
+	</div>
+
+	<div class="bawalshawl">
+		<img src="tudung/bawalshawl.jpg">
+		<div><a href="cataloguebawalshawl.html" style="text-decoration: none; color: #9e4244; "><h1>Bawal Shawl</h1></a></div>
+	</div>
+
+	<div class="bawalflora">
+		<img src="tudung/bawalflora.jpg">
+		<div><a href="cataloguebawalflora.html" style="text-decoration: none; color: #9e4244; "><h1>Bawal Shawl Flora</h1></a></div>
+	</div>
+
+</body>
+</html>
